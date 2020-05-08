@@ -22,9 +22,7 @@ async def on_ready():
 async def on_member_join(member):
     await member.create_dm()
     await member.dm_channel.send(
-        f"""Welcome to YMCA server, you can play music using
-        !p [song name] or !p [youtube URL].
-        !s can vote skip the current track."""
+        f"""Welcome to our server! This message can be further customized by the developer."""
     )
 
 @bot.command()
@@ -82,8 +80,9 @@ async def on_message(message):
                     await message.channel.send("TTS can be disabled with !disableTTS :cry:")
 
             else:
-                voice.play(discord.FFmpegPCMAudio(executable="C:/ProgramData/chocolatey/lib/ffmpeg/tools/ffmpeg/bin/ffmpeg.exe", source="response.mp3"))
-                #voice.play(discord.FFmpegPCMAudio(source="response.mp3"))
+                # Some instances of FFmpeg windows installations may require you to manually specifiy the file path
+                # voice.play(discord.FFmpegPCMAudio(executable="[PATH TO]/ffmpeg.exe", source="response.mp3"))
+                voice.play(discord.FFmpegPCMAudio(source="response.mp3"))
 
     await bot.process_commands(message)
 
