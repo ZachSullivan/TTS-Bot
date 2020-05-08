@@ -16,7 +16,7 @@ Note: The bot is currently unable to work on Heroku services as it relys on send
 
 ## Usage
 
-!joinvoice, joins the user's current voice channel
-!leavevoice, leaves the current voice channel
-!enableTTS, enables the bot to transcribe all inbound user messages (note: the bot will ignore all messages denoted as a command !)
-!disableTTS, disables the TTS-Bot and will no longer transcribe messages until enabled
+!joinvoice, joins the user's current voice channel <br />
+!leavevoice, leaves the current voice channel <br />
+!enableTTS, enables the bot to transcribe all inbound user messages (note: the bot will ignore all messages denoted as a command !) <br />
+!disableTTS, disables the TTS-Bot and will no longer transcribe messages until enabled <br />
