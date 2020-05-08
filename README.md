@@ -9,7 +9,7 @@ Save the TTS-Bot repo and cd into the corresponding dir and execute the followin
 pip install requirements.txt
 ```
 
-Head to [Discord developer portal](https://discord.com/developers/docs/intro) to set up a new TTS bot.
+Head to [Discord developer portal](https://discord.com/developers/docs/intro) to set up a new TTS bot (create a new discord application).
 Be sure to copy the bot token generate with your new app, and create a new .env file and paste in the bot token
 
 Note: The bot is currently unable to work on Heroku services as it relys on sending outbound UDP packets.
