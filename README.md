@@ -5,7 +5,6 @@ TTS Bot is a simple Python discord bot that transcribes channels messages as a v
 
 Save the TTS-Bot repo and cd into the corresponding dir and execute the following command.
 
-Install the required libraries with
 ```bash
 pip install requirements.txt
 ```
